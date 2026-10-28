@@ -2,4 +2,32 @@
 title: "Proposal"
 ---
 
-Your proposal go here.
+a title
+> Analysis of Premier League data
+
+team member names
+> We are Chris Frantz, Jack Freimann, and Joey Burica. 
+
+a short description of the project
+> We will be examining data on players and teams in the English Premier League to make some conclusions based on our research questions.
+
+2-3 broad research questions the team is interested in exploring
+> How are Premier League players distance covered affected by weather? Is there a significant home field advantage? What is more important: more goals scored or less goals conceded?
+
+the reasons/inspirations behind choosing the topic
+> We are all soccer players that frequently watch the Premier League, so Premier League data is perfect for us.
+
+one potential data set that can be used to answer the research questions
+> Stathead/FBref 
+
+communication plan, ie, primary communication channel (eg, Google Chat, Slack, Email), expected response time (eg, 24 hours during the week), meeting time (eg, “we will meet 7-8pm every Wednesday”)
+> We all have each others' contact information. We will expect responses within 1 day. We will meet every Wednesday at 7 pm.
+
+roles–everyone is expected to contribute to the project but having leads helps with accountability. In particular, determine (1) point of contact–the main person to email the instructor/preceptors, (2) technical lead–the person who will oversee the code base and website, (3) style lead–the person who will make sure the code is following the COMP/STAT 112/212: Code Styling Guide
+> Jack will be the main point of contact, Chris will be the technical lead, and Joey will be the style lead.
+
+conflict resolution, ie, if a team member misses a deadline, how will the team handle it? How will you make decisions if the team is split 50/50 on a something?
+> We will attempt to do things as a team so that we are all accountable. We have 3 so a tiebreak will be available. 
+
+a rough implementation plan, ie, list of tasks with due date and roles–refer to the list of deliverables when building your list. The plan should be added as GitHub Issues within the project repository–see the callout box below for details.
+> 
