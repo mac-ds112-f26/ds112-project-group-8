@@ -30,4 +30,4 @@ conflict resolution, ie, if a team member misses a deadline, how will the team h
 > We will attempt to do things as a team so that we are all accountable. We have 3 so a tiebreak will be available. 
 
 a rough implementation plan, ie, list of tasks with due date and roles–refer to the list of deliverables when building your list. The plan should be added as GitHub Issues within the project repository–see the callout box below for details.
-> 
+> The first thing that we need to do is find a good data source. That is in the works as you are reading this. The next thing we need to do after reviewing the data is hone in on one of the specific research questions listed above. After that we will be able to complete our project with multiple, detailed, visualisations that help address the question of interest. Please let me know if there is anything you think we also need to do. Signing off, the contact guy.
