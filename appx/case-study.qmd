@@ -2,4 +2,22 @@
 title: "Case Study"
 ---
 
-Your case study go here.
+Our case study is:
+How News Media Covers Trump and Clinton: An analysis of images in news media by The Pudding.
+https://pudding.cool/2018/01/chyrons/
+
+
+
+Instructions: 
+record your observations about its data story structure, ie, how the report unfolds the story. The analysis should be added to appx/case-study.qmd file. Make sure to cite the referenced resources.
+
+
+They start by laying some background information. It gives information necessary to understanding the visual, as well as describing the question/interesting unknown that the article will answer.
+
+In the text, they tell a story about one aspect of the topic, and give a visualization that help to explain that aspect. Each visualization is explained and connected to the text. Examples are given to help the user understand.
+
+The visuals they use are somewhat interactive, moving the mouse shows a different part of the visual, and the user can experiment and learn at their pace. The text scrolls by but the the interactive visual remains, allowing the story itself to be interactive.
+
+They end the article by summarizing their analysis in a brief paragraph. They restate what should be taken from the article and what can be done by the reader to avoid some of the problems mentioned.
+
+Further specificity about data collection and analysis is added at the very end, in smaller font, to be accesible but not integral to the article.

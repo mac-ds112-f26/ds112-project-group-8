@@ -1,5 +1,13 @@
 ---
-title: "Member 2 First Name & Last Name Initial"
+title: "Jack F"
 ---
 
 Your exploratory data analysis of the team datasets go here.
+
+```{r}
+soccer <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2023/2023-04-04/soccer21-22.csv')
+
+
+
+```
+
