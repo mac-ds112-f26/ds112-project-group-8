@@ -6,8 +6,42 @@ Your exploratory data analysis of the team datasets go here.
 
 ```{r}
 soccer <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2023/2023-04-04/soccer21-22.csv')
+library(tidyverse)
 
-
-
+```
+```{r}
+soccer %>%
+  count(FTR)
+```
+```{r}
+ggplot(soccer, aes(x = FTR, fill = FTR)) +
+  geom_bar() +
+  labs(
+    title = "Distribution of Soccer Match Results",
+    x = "Match Result",
+    y = "Number of Matches"
+  ) +
+  theme_minimal()
+```
+```{r}
+ggplot(soccer, aes(x = FTHG)) +
+  geom_histogram(binwidth = 1) +
+  labs(
+    title = "Distribution of Home Team Goals",
+    x = "Home Team Goals", 
+    y = "Number of Matches"
+  ) +
+  theme_minimal()
+```
+```{r}
+ggplot(soccer, aes(x = HS, y = FTHG)) + 
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(
+    title = "Relationship Between Shots and Goals", 
+    x = "Home Team Shots", 
+    y = "Home Team Goals"
+  ) +
+  theme_minimal()
 ```
 
