@@ -7,3 +7,78 @@ Your exploratory data analysis of the team datasets go here.
 ```{r}
 soccer <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2023/2023-04-04/soccer21-22.csv')
 ```
+```{r}
+soccer %>%
+  summarise(
+    avg_home_goals = mean(FTHG, na.rm = TRUE),
+    avg_away_goals = mean(FTAG, na.rm = TRUE),
+    avg_home_shots = mean(HS, na.rm = TRUE),
+    avg_away_shots = mean(AS, na.rm = TRUE)
+  )
+```
+
+The summary statistics show that home teams score more goals and take more shots on average than away teams. Home teams average 1.51 goals and 13.85 shots per game, while away teams average 1.31 goals and 11.74 shots. This suggests that home teams may have an advantage over away teams.
+
+
+
+
+```{r}
+soccer %>%
+  summarise(
+    Home = mean(FTHG),
+    Away = mean(FTAG)
+  ) %>%
+  pivot_longer(everything(),
+               names_to = "Location",
+               values_to = "Goals") %>%
+  ggplot(aes(x = Location, y = Goals, fill = Location)) +
+  geom_col() +
+  labs(
+    title = "Average Goals: Home vs. Away",
+    x = "Team Location",
+    y = "Average Goals"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+soccer %>%
+  select(HS, AS) %>%
+  pivot_longer(everything(),
+               names_to = "Location",
+               values_to = "Shots") %>%
+  ggplot(aes(x = Location, y = Shots, fill = Location)) +
+  geom_boxplot() +
+  labs(
+    title = "Distribution of Shots: Home vs. Away",
+    subtitle = "2021–2022 Soccer Season",
+    x = "Team Location",
+    y = "Shots per Match"
+  ) +
+  theme_minimal()
+```
+
+
+```{r}
+soccer %>%
+  summarise(
+    Home = sum(HST, na.rm = TRUE) / sum(HS, na.rm = TRUE) * 100,
+    Away = sum(AST, na.rm = TRUE) / sum(AS, na.rm = TRUE) * 100
+  ) %>%
+  pivot_longer(everything(),
+               names_to = "Location",
+               values_to = "Accuracy") %>%
+  ggplot(aes(x = Location, y = Accuracy, fill = Location)) +
+  geom_col() +
+  labs(
+    title = "Shot Accuracy: Home vs. Away",
+    subtitle = "Per match during the 2021–2022 season",
+    x = "Team Location",
+    y = "Shots on Target (%)"
+  ) +
+  theme_minimal()
+```
+
+
+
+
