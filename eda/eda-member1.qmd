@@ -5,6 +5,33 @@ title: "Chris F"
 Your exploratory data analysis of the team datasets go here.
 
 ```{r}
-soccer <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2023/2023-04-04/soccer21-22.csv')
+library(tidyverse)
+library(DataExplorer)
+
+soccer <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2023/2023-04-04/soccer21-22.csv')
+```
+Creates an HTML report of basic statistics, data structure, univariate plots, and correlation analyses.
+```{r}
+create_report(soccer)
+```
+
+Does the same in relation to the Home Team variable.
+```{r}
+create_report(soccer, y = "HomeTeam")
+```
+
+Does the same in relation to the Away Team variable.
+```{r}
+create_report(soccer, y = "AwayTeam")
+```
+
+Does the same in relation to Full Time Home Goals.
+```{r}
+create_report(soccer, y = "FTHG")
+```
+
+Does the same in relation to Full Time Away Goals.
+```{r}
+create_report(soccer, y = "FTAG")
 ```
 
